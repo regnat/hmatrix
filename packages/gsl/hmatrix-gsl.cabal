@@ -87,10 +87,7 @@ library
         if arch(x86_64)
             cc-options: -fPIC
 
-    if flag(onlygsl)
-      extra-libraries: gsl
-    else
-      pkgconfig-depends: gsl
+    extra-libraries: gsl
 
     default-language:    Haskell2010
 
